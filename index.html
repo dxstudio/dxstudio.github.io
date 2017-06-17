@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- include aframe -->
+<head>
+	<meta charset="utf-8">
+	
+	<script src="aframe.js"></script>
+	<!-- include aframe-artoolkit -->
+	<script src="aframe-ar.js"></script>
+	<title>AR</title>
+</head>
+<body style='margin : 0px; overflow: hidden; font-family: Monospace;'><div style='position: fixed; top: 10px; width:inherit; text-align: center; z-index: 1;'>
+	<a href="https://gaoyuting.org" target="_blank" style="text-decoration: none"><h1 style="color: white ">Welcome to gaoyuting.org</h3></a><a href='' target='_blank'></a>
+</div>
+	<!-- enable artoolkit on this scene -->
+	<a-scene stats embedded artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 240; canvasHeight: 180'>
+
+		<!-- define the object which gonna be put on this marker  -->
+		<a-box position='0 0.5 0' material='opacity: 0.5; side: double;color:#268eef;'>
+			<a-torus-knot radius='0.27' radius-tubular='0.05' material='opacity: 0.5; side: double;color:#d800ff;'>
+				<a-animation attribute="rotation" to="360 0 0" dur="3000" easing='linear' repeat="indefinite" ></a-animation>
+			</a-torus-knot>
+		</a-box>
+
+		<a-marker-camera preset='hiro'></a-marker-camera>
+	</a-scene>
+</body>
+</html>
