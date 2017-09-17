@@ -1,27 +1,181 @@
 <!DOCTYPE html>
-<!-- include aframe -->
+<html>
 <head>
 	<meta charset="utf-8">
-	
-	<script src="aframe.js"></script>
-	<!-- include aframe-artoolkit -->
-	<script src="aframe-ar.js"></script>
-	<title>AR</title>
+	<link rel="icon" href="images/dx.png" type="image/x-icon">
+	<link rel="shortcut icon" href="images/dx.png" type="image/x-icon">
+
+    <title>点心工作室</title>
+    <link rel="stylesheet" type="text/css" href="css/company.css">
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/roundabout.js" ></script>
+	<script type="text/javascript" src="js/roundabout_shapes.js" ></script>
+	<script type="text/javascript" src="js/gallery_init.js" ></script>
 </head>
-<body style='margin : 0px; overflow: hidden; font-family: Monospace;'><div style='position: fixed; top: 10px; width:inherit; text-align: center; z-index: 1;'>
-	<a href="https://gaoyuting.org" target="_blank" style="text-decoration: none"><h1 style="color: white ">Welcome to gaoyuting.org</h3></a><a href='' target='_blank'></a>
-</div>
-	<!-- enable artoolkit on this scene -->
-	<a-scene stats embedded artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 240; canvasHeight: 180'>
+<body>
+	<div class="top">
+		<div class="top_content">
+			<ul>
+				<li><a href="html/404.html">收藏本站</a></li>
+				<li><a href="html/404.html">加入我们</a></li>
+				<li><a href="html/en_index.html">English</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="head">
+		<div class="head_content">
+			<div class="head_content_logo">
+				<a href="html/404.html">点心工作室</a>
+			</div>
+			<div class="head_content_menu">
+				<ul>
+					<li><a href="html/404.html">联系留言</a></li>
+					<li><a href="html/404.html">资讯一览</a></li>
+					<li><a href="html/404.html">专题活动</a></li>
+					<li><a href="html/404.html">项目集锦</a></li>
+					<li><a href="html/404.html">团队文化</a></li>
+					<li><a href="index.html">首页</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="main_1">
+			<div class="main_1_container">
+				<img src="images/iphone.png" height="425" width="201" alt="app" class="main_1_img">
+				<div class="main_1_welcome">
+					<h1>欢迎来到点心工作室</h1>
+	                <p><q>点滴服务，心系师生</q></p>
+	                <div class="main_1_buttons">
+		                <div class="main_1_button"><a href="http://app.kuaizhan.com/app/download/g2/M00/C7/55/CgpQVFdmXB6AC4EdAIQ0Hpr7wIE821.apk/tran/%E7%82%B9%E5%BF%83%E5%B7%A5%E4%BD%9C%E5%AE%A4_1.0.0.apk">下载</a></div>
+		                <div class="main_1_button"><a href="http://s4842227105.kuaizhan.com/category/5680788745">更多</a></div>
+		            </div>
 
-		<!-- define the object which gonna be put on this marker  -->
-		<a-box position='0 0.5 0' material='opacity: 0.5; side: double;color:#268eef;'>
-			<a-torus-knot radius='0.27' radius-tubular='0.05' material='opacity: 0.5; side: double;color:#d800ff;'>
-				<a-animation attribute="rotation" to="360 0 0" dur="3000" easing='linear' repeat="indefinite" ></a-animation>
-			</a-torus-knot>
-		</a-box>
+	            </div>
+			</div>
+		</div>
+		<div class="main_2">这里，汇聚了一批有梦想的人</div>
+		<div class="main_3">
+			<div class="main_3_pic">
+				<img src="images/pic5.jpg" alt="pic5" title="合影1" width="384px" height="288px">
+			</div>
+			<div class="main_3_pic">
+				<img src="images/pic9.jpg" alt="pic5" title="合影2" width="384px" height="288px">
+			</div>
+			<div class="main_3_pic">
+				<img src="images/pic10.jpg" alt="pic5" title="合影3" width="384px" height="288px">
+			</div>
+		</div>
+		<div class="main_4">
+			专注于网络应用开发，为师生提供互联网+服务
+		</div>
+		<div class="main_5">
+			<section id="gallery">
+			    <div class="container_image">
+			        <ul id="myRoundabout">
+			            <li><a href="html/404.html" target="_blank" title="图片"><img src="images/slide1.jpg" alt='图片' style="border: 0"></a></li>   
+			            <li><a href="html/404.html" target="_blank" title="图片"><img src="images/slide2.jpg" alt='图片' style="border: 0"></a></li>   
+			            <li><a href="html/404.html" target="_blank" title="图片"><img src="images/slide3.jpg" alt='图片' style="border: 0"></a></li>   
+			            <li><a href="html/404.html" target="_blank" title="图片"><img src="images/slide4.jpg" alt='图片' style="border: 0"></a></li>  
+			            <li><a href="html/404.html" target="_blank" title="图片"><img src="images/slide5.jpg" alt='图片' style="border: 0"></a></li> 
+			        </ul>
+			    </div>
+			</section>
+		</div>
+		<div class="main_6">
+			<div class="main_6_ad">
+				<div class="main_6_elem">
+					<img src="images/ico1.png">
+					<h1>高效</h1>
+					<p>完善的项目管理<br>精益的时间观念<br>优秀的团队文化</p>
+				</div>
+				<div class="main_6_elem">
+					<img src="images/ico2.png">
+					<h1>务实</h1>
+					<p>不唯上<br>不唯虚<br>只为实</p>
+				</div>
+				<div class="main_6_elem">
+					<img src="images/ico3.png">
+					<h1>创新</h1>
+					<p>激发创造力<br>想你所不做<br>做你所不想</p>
+				</div>
+				<div class="main_6_elem">
+					<img src="images/ico4.png">
+					<h1>变革</h1>
+					<p>打破繁琐的体制<br>快捷而解放<br>每天都在改变</p>
+				</div>
+			</div>
+		</div>
+		<div class="main_7">
+			
+		</div>
+	</div>
+	<div class="foot">
+		<!--<div class="foot_1">
+			<div class="foot_1_container">
+				<div class="foot_1_elem">
+					<div class="foot_1_elemtext">
+						
+					</div>
+					<div class="foot_1_elem_elemimg">
+						<div class="foot_1_elemlogo"></div>
+						<div class="foot_1_elemlogon"></div>
+					</div>
+				</div>
+			</div>
+		</div>-->
+		<div id="footer" class="mar-t50">
+                    <div class=" jkinfor-block">
+                        <div class="jkinfor cf">
+                            <div class="jk-logo">
+                                <dl >
+                                    <dt id="dx-logo"><p>点心工作室</p></dt>
+                                    <dd id="dx-logoen"><p>DianXin studio</p></dd>
+                                </dl>
+                            </div>
+                            <dl>
+                                <dt>团队文化</dt>
+                                <dd><a target="_blank" href="html/404.html">创立起源</a></dd>
+                                <dd><a target="_blank" href="html/404.html">团队信仰</a></dd>
+                                <dd><a target="_blank" href="html/404.html">项目原则</a></dd>
+                            </dl>
+                            <dl>
+                                <dt>项目集锦</dt>
+                                <dd><a target="_blank" href="html/404.html">校内</a></dd>
+                                <dd><a target="_blank" href="html/404.html">校外</a></dd>
+                                <dd><a target="_blank" href="html/404.html">商业</a></dd>
+                            </dl>
+                            <dl>
+                                <dt>专题活动</dt>
+                                <dd><a target="_blank" href="html/404.html">脱机自习</a></dd>
+                                <dd><a target="_blank" href="html/404.html">学习交流</a></dd>
+                                <dd><a target="_blank" href="html/404.html">网络安全</a></dd>
+                                <dd><a target="_blank" href="html/404.html">文明上网</a></dd>
+                                
+                            </dl>
+                            <dl>
+                                <dt>资讯一览</dt>
+                                <dd><a target="_blank" href="html/404.html">易班资讯</a></dd>
+                                <dd><a target="_blank" href="html/404.html">先进建设</a></dd>
+                            </dl>
+                            <dl>
+                            	<dt>联系留言</dt>
+                            	<dd><a target="_blank" href="html/404.html">邮件订阅</a></dd>
+                            	<dd><a target="_blank" href="html/404.html">微信公众号</a></dd>
+                            	<dd><a target="_blank" href="html/404.html">企鹅在线</a></dd>
+                            </dl>                         
+                        </div>
 
-		<a-marker-camera preset='hiro'></a-marker-camera>
-	</a-scene>
+                    </div>
+                    
+                </div>
+		<div class="foot_2">
+			<div class="foot_2_container">
+				<div class="foot_2_elem">
+					<p>Copyright&copy;2016-2017. All rights deserved.<em><a href="http://www.miitbeian.gov.cn/">陕ICP备16017712号-1</a></em> <em>Powered by <a href="https://xhcj.taobao.com" title="去我的淘宝店逛逛">Gaoyuting</a></em></p>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
